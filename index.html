@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <!--Start header-->
     <header>
       <div class="container clearfix">
         <div class="logotype">
@@ -65,38 +66,38 @@
         </form>
       </div>
     </header>
-
+    <!--Finish header-->
+    <!--Start content-->
     <main>
       <div class="container clearfix">
-        <div class="slider">
-          <div class="main-preview">
-            <img class="main-slider-image" src="img/preview1-big.jpg" alt="Lamborghini" width="100%" height="auto">
-            <div class="main-slider-description">
-              <h2>Lamborghini <br><span class="model">Aventador</span></h2>
-              <ul>
-                <li>
-                  6.5 - liter engine
-                </li>
-                <li>
-                  2-cylinder engine
-                </li>
-                <li>
-                  capacity of 700 liters
-                </li>
-                <li>
-                  maximum speed of 350 km/h (218 miles/h)
-                </li>
-                <li>
-                  acceleration to 100 km/h takes 2.9 seconds
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="slider-previews">  
+        <!--Start preview image block-->
+        <div class="main-preview">
+          <img class="main-preview-image" src="img/preview1-big.jpg" alt="Lamborghini" width="100%" height="auto">
+          <div class="main-preview-description">
+            <h2>Lamborghini <br><span class="model">Aventador</span></h2>
+            <ul>
+              <li>
+                6.5 - liter engine
+              </li>
+              <li>
+                2-cylinder engine
+              </li>
+              <li>
+                capacity of 700 liters
+              </li>
+              <li>
+                maximum speed of 350 km/h (218 miles/h)
+              </li>
+              <li>
+                acceleration to 100 km/h takes 2.9 seconds
+              </li>
+            </ul>
           </div>
         </div>
+        <!--Finish preview image block-->
+        <!--Start contact block-->
         <div class="contacts clearfix">
-          <div class="contacts-column contacts-sellers">
+          <div class="contacts-column contacts-sellers" id="contacts-sellers">
             <div class="contacts-title">
               <p>Contacts seller</p>
             </div>
@@ -111,7 +112,7 @@
             </div>
           </div>
           <div class="contacts-column separator"></div>
-          <div class="contacts-column contacts-form">
+          <div class="contacts-column contacts-form" id="contacts-form">
             <div class="contacts-title">
               <p>Contacts form</p>
             </div>
@@ -131,16 +132,19 @@
                 </div>
                 <div class="field">
                   <label for="contacts-message">Message</label>
-                  <textarea class="contacts-form-input" id="contacts-message" name="contacts-message" placeholder="Your message" rows="10" ></textarea>
+                  <textarea class="contacts-form-input" id="contacts-message" name="contacts-message" placeholder="Your message" rows="10"></textarea>
                 </div>
               </div>
               <input class="btn contacts-btn" type="submit" value="Send">
             </form>
           </div>
         </div>
+        <!--Finish contact block-->
       </div>
     </main>
+    <!--Finish content-->
 
+    <!--Start footer-->
     <footer>
       <div class="container clearfix">
         <div class="footer-logotype">
@@ -176,18 +180,13 @@
         </div>
       </div>
     </footer>
-
-    <template id="preview-template" style="display: none">
-      <input type="radio" name="slide_switch" id="id"/>
-      	<label for="id">
-		      <img  width="100">
-	      </label>
-      <img>
-    </template>
+    <!--Finish footer-->
 
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="js/maskedinput.min.js"></script>
     <script src="js/phonemask.js"></script>
+    <script src="js/animation.js"></script>
+
   </body>
 
   </html>

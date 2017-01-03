@@ -101,10 +101,6 @@ select {
   color: #fff;
 }
 
-.slider-previews {
-  min-width: 900px;
-  max-height: 180px;
-}
 
 
 h2 {
@@ -112,7 +108,7 @@ h2 {
   margin: 0;
 }
 
-.main-slider-description li, h2 {
+.main-preview-description li, h2 {
   color: #fff;
 }
 
@@ -124,13 +120,13 @@ h2 {
   position: relative;
 }
 
-.main-slider-description {
+.main-preview-description {
   position: absolute;
   top: 40%;
   right: 6%;
 }
 
-.main-slider-description ul {
+.main-preview-description ul {
   display: block;
   width: 250px;
   padding-left: 15px;
@@ -236,20 +232,6 @@ h2 {
   margin-left: 4%;
   border: 1px solid #d9dce2;
 }
-
-@media screen and (max-width: 1000px) {
-  .separator {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-  .contacts-sellers {
-    padding-left: 15%
-  }
-  .footer-logotype {
-    margin-left: 5%;
-  }
-}
-
 
 @media screen and (max-width: 1200px) {
   .footer-copyright {
@@ -383,6 +365,25 @@ address {
   padding: 7px 28px;
 }
 
+@media screen and (max-width: 1000px) {
+  .separator {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .contacts-sellers {
+    padding-left: 15%
+  }
+  .footer-logotype {
+    margin-left: 5%;
+  }
+  .footer-social ul{
+    padding-left: 0;
+  }
+  .subscribe-form {
+    margin-right: 0;
+  }
+}
+
 .subscribe-form-email:focus::-webkit-input-placeholder {
   color: transparent
 }
@@ -397,4 +398,75 @@ address {
 
 .subscribe-form-email:focus:-ms-input-placeholder {
   color: transparent
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
 }
